@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 
 
 
@@ -26,6 +27,10 @@ const myRoute:Routes=[
   {
     path:"view employee",
     component:ViewAllComponent
+  },
+  {
+    path:"edit employee",
+    component:EditEmployeeComponent
   }
 ]
 @NgModule({
@@ -34,7 +39,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     AddEmployeeComponent,
     EmployeeSearchComponent,
-    ViewAllComponent
+    ViewAllComponent,
+    EditEmployeeComponent
   ],
   imports: [
     BrowserModule,
