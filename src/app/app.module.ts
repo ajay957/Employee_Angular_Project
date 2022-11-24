@@ -32,6 +32,10 @@ const myRoute:Routes=[
   {
     path:"edit employee",
     component:EditEmployeeComponent
+  },
+  {
+    path:"delete employee",
+    component:DeleteEmployeeComponent
   }
 ]
 @NgModule({
