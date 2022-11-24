@@ -8,6 +8,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
 
 
 
@@ -40,7 +41,8 @@ const myRoute:Routes=[
     AddEmployeeComponent,
     EmployeeSearchComponent,
     ViewAllComponent,
-    EditEmployeeComponent
+    EditEmployeeComponent,
+    DeleteEmployeeComponent
   ],
   imports: [
     BrowserModule,
