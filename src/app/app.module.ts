@@ -9,6 +9,8 @@ import { EmployeeSearchComponent } from './employee-search/employee-search.compo
 import { ViewAllComponent } from './view-all/view-all.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
+import { FormsModule } from '@angular/forms';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 
@@ -18,23 +20,23 @@ const myRoute:Routes=[
     component:AdminLoginComponent
   },
   {
-    path:"add employee",
+    path:"add",
     component:AddEmployeeComponent
   },
   {
-    path:"search employee",
+    path:"search",
     component:EmployeeSearchComponent
   },
   {
-    path:"view employee",
+    path:"view",
     component:ViewAllComponent
   },
   {
-    path:"edit employee",
+    path:"edit",
     component:EditEmployeeComponent
   },
   {
-    path:"delete employee",
+    path:"delete",
     component:DeleteEmployeeComponent
   }
 ]
@@ -46,12 +48,14 @@ const myRoute:Routes=[
     EmployeeSearchComponent,
     ViewAllComponent,
     EditEmployeeComponent,
-    DeleteEmployeeComponent
+    DeleteEmployeeComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
     
   ],
   providers: [],
